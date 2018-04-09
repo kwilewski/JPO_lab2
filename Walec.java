@@ -3,13 +3,13 @@ public class Walec extends Punkt{
     private double wysokosc, promien;
     private String nazwa="Walec";
 
-    public Walec(){
+    public Walec(){         //konstruktor domyslny
         super();
         this.setWysokosc(1);
         this.setPromien(1);
     }
 
-    public Walec(double masa, double wysokosc, double promien){
+    public Walec(double masa, double wysokosc, double promien){         //konstruktor z parametrami
         super(masa);
         this.setWysokosc(wysokosc);
         this.setPromien(promien);
@@ -28,7 +28,7 @@ public class Walec extends Punkt{
     }
 
 
-    public void setWysokosc(double wysokosc){
+    public void setWysokosc(double wysokosc){           //akcesor z kontrola wartosci
         if(wysokosc>0) {
             this.wysokosc=wysokosc;
         }
@@ -41,7 +41,7 @@ public class Walec extends Punkt{
         return this.wysokosc;
     }
 
-    public void setPromien(double promien){
+    public void setPromien(double promien){         //akcesor z kontrola wartosci
         if(promien>0){
             this.promien=promien;
         }

@@ -3,12 +3,12 @@ public class Kula extends Punkt{
     private double promien;
     private String nazwa="Kula";
 
-    public Kula(){
+    public Kula(){          //konstruktor domyslny
         super();
         this.setPromien(1);
     }
 
-    public Kula(double masa, double promien){
+    public Kula(double masa, double promien){           //konstruktor z parametrami
         super(masa);
         this.setPromien(promien);
     }
@@ -24,7 +24,7 @@ public class Kula extends Punkt{
         System.out.println("Moment bezwladnosci: "+this.momBez());
     }
 
-    public void setPromien(double promien){
+    public void setPromien(double promien){         //akcesor z kontrola wartosci
         if(promien>0){
             this.promien=promien;
         }

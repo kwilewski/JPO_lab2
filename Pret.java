@@ -3,12 +3,12 @@ public class Pret extends Punkt{
     private double dlugosc;
     private String nazwa="Pret";
 
-    public Pret(){
+    public Pret(){          //konstruktor domyslny
         super();
         this.setDlugosc(1);
     }
 
-    public Pret(double masa, double dlugosc){
+    public Pret(double masa, double dlugosc){           //konstruktor z parametrami
         super(masa);
         this.setDlugosc(dlugosc);
     }
@@ -24,7 +24,7 @@ public class Pret extends Punkt{
         System.out.println("Moment bezwladnosci: "+this.momBez());
     }
 
-    public void setDlugosc(double dlugosc){
+    public void setDlugosc(double dlugosc){         //akcesor z kontrola wartosci
         if(dlugosc>0){
             this.dlugosc=dlugosc;
         }
