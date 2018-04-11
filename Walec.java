@@ -16,7 +16,8 @@ public class Walec extends Punkt{
     }
 
     public double momBez(){
-        return 0.5*this.getMasa()*this.getPromien()*this.getWysokosc();
+        double I=0.5*this.getMasa()*this.getPromien()*this.getWysokosc();
+        return I;
     }
 
     public void opis(){

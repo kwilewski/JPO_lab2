@@ -17,8 +17,6 @@ public class Test {
         }
         for (int i=0;i<12;i++) {
             tab.get(i).opis();
-        }
-        for (int i=0;i<12;i++) {
             System.out.println("Moment bezwladnosci w odleglosci 5: "+tab.get(i).MBS(5));
         }
     }

@@ -10,14 +10,14 @@ public class Punkt {
         setMasa(masa);
     }
 
-    public double GMB(){          //Metoda obliczajaca glowny moment bezładnosci
-        int i=0;
-        return i;
+    public double momBez(){          //Metoda obliczajaca glowny moment bezładnosci
+        int I=0;
+        return I;
 
         }
 
     public double MBS(double x){        //Metoda przyjmująca parametr obliczajaca moment bezwladności z tw. Steinera
-        return GMB()+getMasa()*x*x;
+        return momBez()+getMasa()*x*x;
 
     }
 

@@ -17,6 +17,10 @@ public class Pret extends Punkt{
         return (this.getMasa()*this.getDlugosc()*this.getDlugosc())/12;
     }
 
+    public double momBezSt(double x){
+        return momBez()+getMasa()*x*x;
+    }
+
     public void opis(){
         System.out.println(this.getNazwa());
         System.out.println("Masa: "+this.getMasa());

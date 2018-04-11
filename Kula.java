@@ -17,6 +17,10 @@ public class Kula extends Punkt{
         return 0.2*this.getMasa()*this.getPromien()*this.getPromien();
     }
 
+    public double momBezSt(double x){
+        return momBez()+getMasa()*x*x;
+    }
+
     public void opis(){
         System.out.println(this.getNazwa());
         System.out.println("Masa: "+this.getMasa());
